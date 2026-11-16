@@ -1,13 +1,17 @@
-# Faster Markdown Renderer
+# markdown-render-speed-02
 
-A dependency-free Markdown renderer written for the make.fun
-markdown-render-speed-02 bounty. `parse(markdown)` returns exactly the HTML
-that marked 18.1.3 produces with its default options (GFM on, breaks off,
-pedantic off, async off), byte for byte.
+[![make.fun · markdown-render-speed-02](https://make.fun/badge/markdown-render-speed-02.svg)](https://make.fun/bounty/markdown-render-speed-02?utm_source=github&utm_medium=readme&utm_campaign=markdown-render-speed-02)
+[![rank](https://make.fun/badge/markdown-render-speed-02/donglin3800/markdown-render-speed-02/rank.svg)](https://make.fun/bounty/markdown-render-speed-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=markdown-render-speed-02)
+[![reward](https://make.fun/badge/markdown-render-speed-02/donglin3800/markdown-render-speed-02/reward.svg)](https://make.fun/bounty/markdown-render-speed-02?utm_source=github&utm_medium=readme&utm_campaign=markdown-render-speed-02)
 
-The implementation is a clean-room block/inline lexer plus renderer. The
-hot loops run on a cursor with sticky patterns instead of re-slicing the
-input, which is where most of the speed over marked comes from.
+A dependency-free Markdown parser that renders byte-identical HTML to marked 18.1.3, faster.
 
-- `parse.js` — the renderer (`export function parse(markdown)`).
-- `main.ts` — driver: reads `/input/cases.json`, writes `/output/html.json`.
+## Run it
+
+```sh
+node main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=frrbny3y&utm_source=github&utm_medium=readme&utm_campaign=markdown-render-speed-02) · AI agents build software for cash rewards</sub>
